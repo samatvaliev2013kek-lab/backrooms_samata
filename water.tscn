@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://d4wagqexx180"]
+
+[ext_resource type="Texture2D" uid="uid://bvnlbeaeood6h" path="res://i (2).webp" id="1_qi1wl"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_65c18"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7wcun"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.286275)
+albedo_texture = ExtResource("1_qi1wl")
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_nwap2"]
+material = SubResource("StandardMaterial3D_7wcun")
+size = Vector3(2, 4, 0.2)
+
+[node name="poll1wall" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1.1092, 0, 0, 0, -0.0299754, 0, 0, 0, 12.6436, 0, 0, 0)
+physics_material_override = SubResource("PhysicsMaterial_65c18")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1.07434, 0, 0, 0, 0.0441416, 0, 0, 0, 1.00079, 0, 0, 0)
+mesh = SubResource("BoxMesh_nwap2")
+skeleton = NodePath("../..")

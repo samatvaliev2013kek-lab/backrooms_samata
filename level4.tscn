@@ -1,0 +1,315 @@
+[gd_scene load_steps=12 format=3 uid="uid://cwms6n68xi2t2"]
+
+[ext_resource type="PackedScene" uid="uid://daujelaoqgmeb" path="res://poll_dark_wall.tscn" id="1_wh4pa"]
+[ext_resource type="PackedScene" uid="uid://dh3kqcfi5h3e4" path="res://addons/gremlins_first_person/gremlins_fpc.tscn" id="2_7ln0b"]
+[ext_resource type="PackedScene" uid="uid://dvuk32r1hq6r7" path="res://ui.tscn" id="3_gmhuy"]
+[ext_resource type="PackedScene" uid="uid://d4wagqexx180" path="res://water.tscn" id="4_g1tnb"]
+[ext_resource type="PackedScene" uid="uid://dapw1xir6aatj" path="res://Swimming ring.fbx" id="5_pklw6"]
+[ext_resource type="Script" uid="uid://b3xh2coiao8pu" path="res://37.gd" id="6_bp1i4"]
+[ext_resource type="Script" uid="uid://c2ailqluk2n0a" path="res://areanextlevel188.gd" id="7_bvvno"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bvvno"]
+size = Vector3(3.13236, 5.01451, 3.64248)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b4lsh"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yxclo"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fx4lf"]
+size = Vector3(2.86006, 4.53338, 4.57289)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="poll1wall" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(35.7004, 0, 0, 0, -1.18834e-06, 1, 0, -27.1861, -4.37114e-08, -20.1416, 0, 25.1723)
+
+[node name="poll1wall14" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(35.7004, 0, 0, 0, -1.18834e-06, 1, 0, -27.1861, -4.37114e-08, -20.1416, 0, 133.389)
+
+[node name="poll1wall7" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(22.3349, 0, 0, 0, -2.63216e-07, 1, 0, -6.0217, -4.37114e-08, -9.16679, 5.55753, 69.9161)
+
+[node name="poll1wall45" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(22.3349, 0, 0, 0, -8.26022e-07, 1, 0, -18.8972, -4.37114e-08, -9.16679, 5.55753, 13.6103)
+
+[node name="poll1wall44" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(3.90109, 0, 0, 0, -1.19881e-06, 1, 0, -27.4256, -4.37114e-08, -13.4726, 5.55753, 29.4539)
+
+[node name="poll1wall59" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(4.73924, 0, 0, 0, -1.19881e-06, 1, 0, -27.4256, -4.37114e-08, 3.81843, 5.55753, 29.4539)
+
+[node name="poll1wall58" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(21.0094, 0, 0, 0, -2.6094e-07, 1, 0, -5.96961, -4.37114e-08, -12.5064, 5.55753, 72.2978)
+
+[node name="poll1wall57" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(21.0094, 0, 0, 0, -5.18276e-07, 1, 0, -11.8568, -4.37114e-08, -12.5064, 5.55753, 29.4539)
+
+[node name="poll1wall51" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(103.39, 0, 0, 0, -2.31004e-06, 1, 0, -52.8477, -4.37114e-08, -12.5064, 31.9859, 63.5546)
+
+[node name="poll1wall56" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(103.39, 0, 0, 0, -2.31004e-06, 1, 0, -52.8477, -4.37114e-08, -12.5064, -0.678129, 63.5546)
+
+[node name="poll1wall52" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(110.07, 0, 0, 0, 1.21525e-08, 142.3, 0, 0.278017, -6.22011e-06, -12.5064, 18.4269, -41.6596)
+
+[node name="poll1wall53" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(110.07, 0, 0, 0, 1.21525e-08, 142.3, 0, 0.278017, -6.22011e-06, -12.5064, 18.4269, 168.241)
+
+[node name="poll1wall54" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-4.81133e-06, -0.278017, 6.22011e-06, 0, 1.21525e-08, 142.3, 110.07, -1.21525e-08, 2.7189e-13, -113.82, 18.4269, 60.8864)
+
+[node name="poll1wall55" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-4.81133e-06, -0.278017, 6.22011e-06, 0, 1.21525e-08, 142.3, 110.07, -1.21525e-08, 2.7189e-13, 91.2418, 18.4269, 60.8864)
+
+[node name="poll1wall2" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(4.05455, 0, 0, 0, -3.84e-09, 30.3186, 0, -0.087849, -1.32527e-06, 1.43415, 3.01489, -1.08617)
+
+[node name="poll1wall13" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(4.05455, 0, 0, 0, -9.31091e-08, 30.3186, 0, -2.13009, -1.32527e-06, 1.43415, 3.01489, 36.7386)
+
+[node name="poll1wall15" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(4.05455, 0, 0, 0, -6.40684e-09, 30.3186, 0, -0.146571, -1.32527e-06, 8.34054, 3.01489, 68.6165)
+
+[node name="poll1wall16" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(4.05455, 0, 0, 0, -6.40684e-09, 30.3186, 0, -0.146571, -1.32527e-06, 8.34054, 3.01489, 61.3235)
+
+[node name="poll1wall17" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(4.05455, 0, 0, 0, -6.40684e-09, 30.3186, 0, -0.146571, -1.32527e-06, 8.34054, 3.01489, 59.0267)
+
+[node name="poll1wall18" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(4.05455, 0, 0, 0, -6.40684e-09, 30.3186, 0, -0.146571, -1.32527e-06, 8.34054, 3.01489, 58.1773)
+
+[node name="poll1wall46" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(4.76452, 0, 0, 0, -7.97424e-08, 1.37912, 0, -1.82429, -6.02833e-08, 16.7823, 5.91944, 55.1166)
+
+[node name="poll1wall47" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(5.23991, 0, 0, 0, -2.02433e-09, 28.7907, 0, -0.0463112, -1.25848e-06, 14.0019, 8.93937, 57.9735)
+
+[node name="poll1wall19" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(4.05455, 0, 0, 0, -6.40684e-09, 30.3186, 0, -0.146571, -1.32527e-06, 8.34054, 3.01489, 51.227)
+
+[node name="poll1wall20" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(4.27207, 0, 0, 0, -6.40684e-09, 30.3186, 0, -0.146571, -1.32527e-06, -4.43062, 3.01489, 53.2135)
+
+[node name="poll1wall64" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(14.9147, 0, 0, 0, -8.67273e-08, 4.41395, 0, -1.98408, -1.9294e-07, -38.7208, 16.2977, 55.7443)
+
+[node name="poll1wall65" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(15.4904, 0, 0, 0, -8.67273e-08, 3.93812, 0, -1.98408, -1.72141e-07, -36.4282, 21.4807, 55.7443)
+
+[node name="poll1wall66" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(13.2071, 0, 0, 0, -3.81939e-09, 21.9512, 0, -0.0873773, -9.59519e-07, -35.9316, 19.2742, 53.8081)
+
+[node name="poll1wall67" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(13.2071, 0, 0, 0, -3.81939e-09, 21.9512, 0, -0.0873773, -9.59519e-07, -35.9316, 19.2742, 58.4337)
+
+[node name="poll1wall48" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(4.25392, 0, 0, 0, -6.40684e-09, 30.3186, 0, -0.146571, -1.32527e-06, -4.6247, 3.01489, 58.7316)
+
+[node name="poll1wall49" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(0.150534, 0, 0, 0, -6.10388e-08, 30.3186, 0, -1.3964, -1.32527e-06, -8.94768, 2.30966, 55.9324)
+
+[node name="poll1wall60" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(0.260056, 4.83766e-08, -110.583, 0.337994, -3.72214e-08, 85.0839, 1.72739e-15, -1.3964, -6.09896e-06, -12.9997, 8.28823, 55.9324)
+
+[node name="poll1wall63" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(0.260056, 4.83766e-08, -110.583, 0.337994, -3.72214e-08, 85.0839, 1.72739e-15, -1.3964, -6.09896e-06, -11.3503, 12.7788, 55.9324)
+
+[node name="poll1wall61" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(0.0131444, -0.86004, -109.839, 0.0259229, -1.09615, 86.0226, -0.42547, -0.0933558, 1.84778, -12.9997, 11.0843, 58.2798)
+
+[node name="poll1wall62" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(0.0131444, -0.86004, -109.839, 0.0259229, -1.09615, 86.0226, -0.42547, -0.0933558, 1.84778, -12.9997, 11.0843, 53.4896)
+
+[node name="poll1wall3" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-2.50195e-06, -0.088143, -1.3297e-06, 0, -3.85285e-09, 30.4201, -57.2379, 3.85285e-09, 2.74271e-13, 11.8717, 3.01489, 24.7216)
+
+[node name="poll1wall21" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.17806e-08, -7.32515, -1.32971e-06, 0, -3.20192e-07, 30.4201, -0.269509, 3.20192e-07, 2.74271e-13, -2.45218, 3.01489, 81.3556)
+
+[node name="poll1wall33" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-2.95882e-07, -8.40822, -1.13775e-07, -3.3845, -1.34527e-07, 2.25414, -5.86213, 5.02061e-07, -1.30143, -14.6224, 3.12872, 95.1713)
+
+[node name="poll1wall38" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-7.51573e-08, -5.38402, -5.89714e-08, -0.8597, -8.61413e-08, 1.16836, -1.48904, 3.21484e-07, -0.674552, 12.3956, 5.69396, 99.3677)
+
+[node name="poll1wall8" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-3.9499e-09, -10.658, -1.32971e-06, 0, -4.65874e-07, 30.4201, -0.0903631, 4.65874e-07, 2.74271e-13, -9.49411, 3.04789, -22.6538)
+
+[node name="poll1wall10" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-9.49885e-07, -0.0647276, -1.32971e-06, 0, -2.82933e-09, 30.4201, -21.731, 2.82933e-09, 2.74271e-13, -30.9003, 3.04789, -1.95149)
+
+[node name="poll1wall12" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.07015e-06, -0.0647276, -1.32971e-06, 0, -2.82933e-09, 30.4201, -24.4823, 2.82933e-09, 2.74271e-13, -12.129, 3.04789, 43.5401)
+
+[node name="poll1wall23" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.25476e-06, -0.0647276, -2.60239e-06, 0, -2.82933e-09, 59.5356, -28.7057, 2.82933e-09, 5.36779e-13, -17.1008, 5.40517, 70.201)
+
+[node name="poll1wall36" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-3.61966e-07, -0.0647276, -2.60239e-06, 0, -2.82933e-09, 59.5356, -8.28087, 2.82933e-09, 5.36779e-13, -4.09857, 5.40517, 92.6607)
+
+[node name="poll1wall37" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-3.61966e-07, -0.0647276, -2.60239e-06, 0, -2.82933e-09, 59.5356, -8.28087, 2.82933e-09, 5.36779e-13, 1.79549, 5.40517, 89.7241)
+
+[node name="poll1wall24" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.07015e-06, -0.0647276, -1.32971e-06, 0, -2.82933e-09, 30.4201, -24.4823, 2.82933e-09, 2.74271e-13, -19.4895, 3.04789, 56.9734)
+
+[node name="poll1wall34" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(19.7093, 3.10862e-15, -3.24221e-13, -1.11289e-21, -2.82933e-09, 30.4201, 4.30158e-12, -0.0647276, -1.32971e-06, -11.1885, 8.34802, 84.2369)
+
+[node name="poll1wall35" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(27.0504, 3.10862e-15, -3.24221e-13, -1.5274e-21, -2.82933e-09, 30.4201, 5.90377e-12, -0.0647276, -1.32971e-06, -4.03153, 9.59689, 100.875)
+
+[node name="poll1wall39" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(9.08782, 3.10862e-15, -3.74934e-13, -5.13144e-22, -2.82933e-09, 35.1783, 1.98342e-12, -0.0647276, -1.5377e-06, 10.6928, 8.56431, 97.8358)
+
+[node name="poll1wall40" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(0.308765, 4.82953e-13, -3.74944e-13, -1.74344e-23, -4.39562e-07, 35.1792, 6.73882e-14, -10.056, -1.53774e-06, 19.4065, 8.56431, 77.7588)
+
+[node name="poll1wall41" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(0.310103, 6.40606e-13, -3.76569e-13, -1.751e-23, -5.8305e-07, 35.3316, 6.76802e-14, -13.3387, -1.5444e-06, 22.7562, 8.56431, 76.8923)
+
+[node name="poll1wall43" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(7.01121, 2.71356e-15, -3.76569e-13, -3.95888e-22, -2.46976e-09, 35.3316, 1.5302e-12, -0.0565016, -1.5444e-06, 15.4871, 8.5835, 51.3841)
+
+[node name="poll1wall50" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(0.0692412, 8.70462e-14, -3.76569e-13, -3.9097e-24, -7.92255e-08, 35.3316, 1.5112e-14, -1.81247, -1.5444e-06, 8.526, 9.18418, 54.9697)
+
+[node name="poll1wall42" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(1.45558, 5.59463e-13, -1.82178e-14, -1.89899e-14, 0.696345, 1.70623, 3.17113e-13, -11.6283, 0.102176, 21.0571, 6.00367, 75.0563)
+
+[node name="poll1wall25" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.07015e-06, -0.0647276, -1.32971e-06, 0, -2.82933e-09, 30.4201, -24.4823, 2.82933e-09, 2.74271e-13, -21.3159, 3.04789, 56.9734)
+
+[node name="poll1wall26" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.07015e-06, -0.0647276, -1.32971e-06, 0, -2.82933e-09, 30.4201, -24.4823, 2.82933e-09, 2.74271e-13, -23.2326, 3.04789, 56.9734)
+
+[node name="poll1wall27" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.07015e-06, -0.0647276, -1.32971e-06, 0, -2.82933e-09, 30.4201, -24.4823, 2.82933e-09, 2.74271e-13, -25.2136, 3.04789, 56.9734)
+
+[node name="poll1wall28" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.07015e-06, -0.0647276, -1.32971e-06, 0, -2.82933e-09, 30.4201, -24.4823, 2.82933e-09, 2.74271e-13, -27.3165, 3.04789, 56.9734)
+
+[node name="poll1wall29" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.07015e-06, -0.0647276, -1.32971e-06, 0, -2.82933e-09, 30.4201, -24.4823, 2.82933e-09, 2.74271e-13, -29.2601, 3.04789, 56.9734)
+
+[node name="poll1wall31" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-4.155e-07, -0.0647276, -1.32971e-06, 0, -2.82933e-09, 30.4201, -9.50557, 2.82933e-09, 2.74271e-13, -38.1921, 3.04789, 28.5599)
+
+[node name="poll1wall32" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-6.72145, -0.0457693, -9.40247e-07, -5.28282e-23, -2.82933e-09, 30.4201, -6.72145, 0.0457693, 9.40247e-07, -37.8723, 3.04789, 28.5599)
+
+[node name="poll1wall30" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.77555e-06, -0.0647276, -2.64002e-06, 0, -2.82933e-09, 60.3964, -40.6201, 2.82933e-09, 5.44541e-13, -30.9498, 6.06892, 63.8625)
+
+[node name="poll1wall5" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.2962e-08, -8.76532, -1.32971e-06, 0, -3.83144e-07, 30.4201, -0.296537, 3.83144e-07, 2.74271e-13, -5.3364, 3.01489, 10.1641)
+
+[node name="poll1wall11" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.2962e-08, -11.907, -1.32971e-06, 0, -5.20473e-07, 30.4201, -0.296537, 5.20473e-07, 2.74271e-13, -20.7601, 3.01489, 19.3064)
+
+[node name="poll1wall6" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.2962e-08, -4.09903, -1.32971e-06, 0, -1.79174e-07, 30.4201, -0.296537, 1.79174e-07, 2.74271e-13, -1.60096, 3.01489, -11.2854)
+
+[node name="poll1wall9" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-1.2962e-08, -4.11914, -1.32971e-06, 0, -1.80053e-07, 30.4201, -0.296537, 1.80053e-07, 2.74271e-13, -17.7564, 2.99181, -7.0307)
+
+[node name="poll1wall4" parent="." instance=ExtResource("1_wh4pa")]
+transform = Transform3D(-5.1091e-07, -0.088143, -1.3297e-06, 0, -3.85285e-09, 30.4201, -11.6883, 3.85285e-09, 2.74271e-13, -9.4335, 3.01489, -1.08617)
+
+[node name="FirstPersonCharacter" parent="." instance=ExtResource("2_7ln0b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.04023, 3.66564)
+sprint_speed = 8.0
+
+[node name="UI" parent="." instance=ExtResource("3_gmhuy")]
+
+[node name="poll1wall22" parent="." instance=ExtResource("4_g1tnb")]
+transform = Transform3D(5.79517, 0, 0, 0, 219.074, 0, 0, 0, 4.88887, -24.0188, 0.60235, 87.3428)
+
+[node name="Swimming ring" parent="." instance=ExtResource("5_pklw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.3571, 0.466712, 87.3938)
+
+[node name="Swimming ring2" parent="." instance=ExtResource("5_pklw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.07789, 0.466712, 45.4582)
+
+[node name="Swimming ring3" parent="." instance=ExtResource("5_pklw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.07789, 0.466712, 39.2214)
+
+[node name="Swimming ring4" parent="." instance=ExtResource("5_pklw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.07789, 0.466712, 35.5778)
+
+[node name="Swimming ring5" parent="." instance=ExtResource("5_pklw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.07789, 0.466712, 32.1829)
+
+[node name="Swimming ring6" parent="." instance=ExtResource("5_pklw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.07789, 1.29061, 32.1829)
+
+[node name="Swimming ring7" parent="." instance=ExtResource("5_pklw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.07789, 2.04932, 32.1829)
+
+[node name="Swimming ring8" parent="." instance=ExtResource("5_pklw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.07789, 2.68637, 32.1829)
+
+[node name="Swimming ring9" parent="." instance=ExtResource("5_pklw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.18035, 0.466714, 26.5421)
+
+[node name="Swimming ring10" parent="." instance=ExtResource("5_pklw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.71262, 0.466714, 23.672)
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, -7.13705e-11, 0, -2.68052e-12, 1, 0, 7.27596e-11, 0, 1, -28.2376, 0.862529, -0.252084)
+script = ExtResource("6_bp1i4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, -8.6445e-10, 0, -2.82441e-12, 1, 0, 8.65839e-10, 0, 1, 49.2243, 8.72358, 68.8838)
+shape = SubResource("BoxShape3D_bvvno")
+
+[node name="door" parent="Area3D" instance=ExtResource("1_wh4pa")]
+transform = Transform3D(0.187654, -4.47658e-18, 2.17297e-09, 5.03009e-13, -6.27231e-08, 30.4464, -1.36536e-11, -1.43493, -1.33086e-06, 28.0168, 2.15236, 56.0149)
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="."]
+transform = Transform3D(1, -1.29578e-10, 0, -2.69118e-12, 1, 0, 1.30967e-10, 0, 1, -48.0578, 17.3589, 56.167)
+radius = 1.26394
+material = SubResource("StandardMaterial3D_b4lsh")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="CSGSphere3D2"]
+transform = Transform3D(1, 8.66507e-12, 0, -2.6894e-12, 1, 0, -7.27596e-12, 0, 1, -0.00028801, 3.2533, 0.000537872)
+radius = 1.25985
+material = SubResource("StandardMaterial3D_b4lsh")
+
+[node name="CSGBox3D47" type="CSGBox3D" parent="CSGSphere3D2"]
+transform = Transform3D(1, -4.76436e-09, 0, -3.47633e-12, 1, 0, 4.76575e-09, 0, 1, -0.00939369, 1.49126, 0.0272675)
+use_collision = true
+size = Vector3(0.077558, 3.56744, 2.51256)
+material = SubResource("StandardMaterial3D_yxclo")
+
+[node name="CSGBox3D48" type="CSGBox3D" parent="CSGSphere3D2"]
+transform = Transform3D(-3.09592e-08, 7.48832e-05, -1, -0.000254655, 1, 7.48831e-05, 1, 0.00025465, 7.78091e-08, -0.00938797, 1.49126, -0.000370026)
+use_collision = true
+size = Vector3(0.077558, 3.56744, 2.51256)
+material = SubResource("StandardMaterial3D_yxclo")
+
+[node name="CSGBox3D49" type="CSGBox3D" parent="CSGSphere3D2"]
+transform = Transform3D(0.707107, 9.0179e-05, -0.707107, -0.000142836, 1, -1.52992e-05, 0.707107, 0.000111815, 0.707107, -0.00938988, 1.49126, -0.000370026)
+use_collision = true
+size = Vector3(0.077558, 3.56744, 2.51256)
+material = SubResource("StandardMaterial3D_yxclo")
+
+[node name="3" type="CSGBox3D" parent="CSGSphere3D2"]
+transform = Transform3D(-0.707107, -3.6932e-05, -0.707107, -0.000269954, 1, 0.000217719, 0.707107, 0.000344834, -0.707107, -0.00938606, 1.49126, -0.000370026)
+use_collision = true
+size = Vector3(0.077558, 3.56744, 2.51256)
+material = SubResource("StandardMaterial3D_yxclo")
+
+[node name="areanextlevel" type="Area3D" parent="CSGSphere3D2"]
+transform = Transform3D(1, -1.00474e-10, 0, -2.68585e-12, 1, 0, 1.01863e-10, -4.03897e-27, 1, 2.05056, 0.869654, 0.63982)
+script = ExtResource("7_bvvno")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGSphere3D2/areanextlevel"]
+transform = Transform3D(1, -2.20323e-09, 0, -3.05e-12, 1, 0, 2.20462e-09, 0, 1, -1.52705, 0.986904, -0.771671)
+shape = SubResource("BoxShape3D_fx4lf")
