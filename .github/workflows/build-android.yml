@@ -11,17 +11,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Setup Godot
-        uses: chickensoft-games/setup-godot@v2
-        with:
-          version: "4.3"
+      - name: Download Godot 4.4.1
+        run: |
+          wget https://github.com/godotengine/godot/releases/download/4.4.1-stable/Godot_v4.4.1-stable_linux.x86_64.zip
+          unzip Godot_v4.4.1-stable_linux.x86_64.zip
+          chmod +x Godot_v4.4.1-stable_linux.x86_64
           
-      - name: Install Android Templates
-        run: godot --headless --install-android-build-template
-        
+      - name: Download Android Templates 4.4.1
+        run: |
+          wget https://github.com/godotengine/godot/releases/download/4.4.1-stable/Godot_v4.4.1-stable_export_templates.tpz
+          mkdir -p ~/.local/share/godot/export_templates/4.4.1-stable
+          unzip -j Godot_v4.4.1-stable_export_templates.tpz -d ~/.local/share/godot/export_templates/4.4.1-stable
+          
       - name: Export APK
-        run: godot --headless --export-release "Android" "game.apk"
-        
+        run: |
+          ./Godot_v4.4.1-stable_linux.x86_64 --headless --export-release "Android" "game.apk"
+          
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
