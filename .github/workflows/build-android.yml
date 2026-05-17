@@ -9,27 +9,26 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Download Godot 4.4.1
         run: |
           wget https://github.com/godotengine/godot/releases/download/4.4.1-stable/Godot_v4.4.1-stable_linux.x86_64.zip
           unzip Godot_v4.4.1-stable_linux.x86_64.zip
           chmod +x Godot_v4.4.1-stable_linux.x86_64
-          
-      - name: Download and Install Android Templates 4.4.1
+          sudo mv Godot_v4.4.1-stable_linux.x86_64 /usr/local/bin/godot
+
+      - name: Install Android Export Templates
         run: |
           wget https://github.com/godotengine/godot/releases/download/4.4.1-stable/Godot_v4.4.1-stable_export_templates.tpz
           mkdir -p ~/.local/share/godot/export_templates/4.4.1-stable
-          # Правильная распаковка (сначала содержимое tpz, внутри него папка templates)
-          unzip Godot_v4.4.1-stable_export_templates.tpz -d templates_temp
-          cp templates_temp/templates/* ~/.local/share/godot/export_templates/4.4.1-stable/
+          unzip -j Godot_v4.4.1-stable_export_templates.tpz 'templates/*' -d ~/.local/share/godot/export_templates/4.4.1-stable
           ls -la ~/.local/share/godot/export_templates/4.4.1-stable/
-          
+
       - name: Export APK
-        run: |
-          ./Godot_v4.4.1-stable_linux.x86_64 --headless --export-release "Android" "game.apk"
-          
+        run: godot --headless --export-release "Android" "game.apk"
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
