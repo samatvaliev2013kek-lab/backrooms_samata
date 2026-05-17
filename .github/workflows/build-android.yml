@@ -1,0 +1,29 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Godot
+        uses: chickensoft-games/setup-godot@v2
+        with:
+          version: "4.3"
+          
+      - name: Install Android Templates
+        run: godot --headless --install-android-build-template
+        
+      - name: Export APK
+        run: godot --headless --export-release "Android" "game.apk"
+        
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: game-apk
+          path: game.apk
